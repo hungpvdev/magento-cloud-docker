@@ -1,4 +1,4 @@
-FROM elasticsearch:5.2.2
+FROM elasticsearch:5.2.3
 
 #RUN echo "xpack.security.enabled: false" >> /usr/share/elasticsearch/config/elasticsearch.yml
 
