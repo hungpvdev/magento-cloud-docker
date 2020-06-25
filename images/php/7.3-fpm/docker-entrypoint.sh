@@ -58,5 +58,6 @@ fi
 
 # Configure PHP-FPM
 [ ! -z "${MAGENTO_RUN_MODE}" ] && sed -i "s/!MAGENTO_RUN_MODE!/${MAGENTO_RUN_MODE}/" /usr/local/etc/php-fpm.conf
+[ ! -z "${FPM_MAX_CHILDREN}" ] && sed -i "s/!FPM_MAX_CHILDREN!/${FPM_MAX_CHILDREN}/" /usr/local/etc/php-fpm.conf
 
 exec "$@"
